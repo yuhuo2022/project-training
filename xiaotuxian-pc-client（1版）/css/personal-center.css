@@ -1,0 +1,308 @@
+.xhx_body {
+	padding: 30px 0 85px;
+	background-color: #F6F6F6;
+}
+
+.xhx_body .wrapper {
+	display: flex;
+}
+
+/*侧边栏 start*/
+.xhx_body .aside {
+	margin-right: 18px;
+	width: 227px;
+	min-height: 500px;
+}
+
+/*用户信息*/
+.xhx_body .user {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 50px;
+	width: 227px;
+	height: 186px;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.xhx_body .avatar img {
+	width: 85px;
+	height: 85px;
+	text-align: center;
+}
+
+.xhx_body h3 {
+	font-size: 18px;
+	color: #333;
+	font-weight: 400;
+}
+
+.xhx_body .vip {
+	padding-left: 5px;
+	width: 93px;
+	height: 26px;
+	border-radius: 13px;
+	background-image: linear-gradient(264deg,
+	#E05E2F 0%,
+	#EA745E 95%);
+	margin-bottom: 32px;
+}
+
+.xhx_body .vip img {
+	width: 15px;
+	height: 16px;
+}
+
+.xhx_body .vip span {
+	font-size: 14px;
+	color: #F9F9F9;
+}
+
+/*账户信息等公共样式*/
+.style {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.style h3 {
+	margin: 20px 0;
+	font-size: 18px;
+	color: #333;
+}
+
+.style li {
+	margin-bottom: 20px;
+}
+
+.style li a {
+	font-size: 14px;
+	color: #666;
+}
+
+.style li:hover {
+	color: #5CB99E;
+	list-style: disc;
+}
+.style li:hover a{
+	color: #5CB99E;
+}
+/*侧边栏 end*/
+
+/*主体内容 start*/
+.xhx_body .main {
+	flex: 1;
+	min-height: 500px;
+}
+
+/*账户概览*/
+.overview {
+	display: flex;
+	height: 132px;
+	margin-bottom: 18px;
+	padding: 20px 0;
+	background-color: #FFF;
+}
+
+.overview div {
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+}
+
+.overview div:nth-child(1) {
+	border-right: 1px solid #F4F4F4;
+}
+
+.overview div a img {
+	width: 25px;
+	margin-bottom: 10px;
+}
+
+.overview div a:nth-child(3) img {
+	width: 18px;
+}
+
+.overview div span {
+	font-size: 25px;
+	color: #E05E30;
+}
+
+.overview div p {
+	font-size: 16px;
+}
+
+/*公共类*/
+.panel {
+	margin-bottom: 20px;
+	padding: 28px 20px;
+	background-color: #FFF;
+}
+
+.panel-title {
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+	border-bottom: 1px solid #F4F4F4;
+}
+
+.panel-title h4 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #333;
+}
+
+.panel-title a {
+	margin-top: 8px;
+	font-size: 16px;
+	color: #999;
+}
+
+.panel-title a::after {
+	display: inline-block;
+	margin-left: 13px;
+	content: "";
+	width: 7px;
+	height: 13px;
+	background-image: url(../images/sprites.png);
+	background-position: 0 -110px;
+	vertical-align: middle;
+}
+
+/*订单*/
+.orders .content li {
+	display: flex;
+	margin-top: -1px;
+	margin-bottom: 20px;
+	height: 137px;
+	border: 1px solid #F4F4F4;
+}
+
+.orders .content li:last-child {
+	margin-bottom: 0;
+}
+
+.orders li .goods {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	margin-right: 120px;
+	padding: 17px 0 14px 12px;
+}
+
+.orders .goods img {
+	width: 107px;
+	height: 107px;
+}
+
+.orders .goods .txt {
+	/*处理flex弹性布局省略号问题*/
+	flex: 1;
+	width: 0;
+}
+
+.orders .goods .txt h5 {
+	font-size: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #333;
+}
+
+.orders .goods .txt p {
+	font-size: 14px;
+	color: #999;
+}
+
+.orders li .status {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 120px;
+	font-size: 14px;
+	color: #E05E30;
+}
+
+.orders .status a {
+	color: #999;
+}
+
+.orders .common {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.orders li .pay {
+	width: 200px;
+	border-right: 1px solid #E8E8E8;
+	border-left: 1px solid #E8E8E8;
+	font-size: 14px;
+	color: #333;
+}
+
+.orders .pay p:first-child {
+	color: #9A2E1F;
+}
+
+.orders li.action {
+	width: 180px;
+}
+
+.orders .action a {
+	font-size: 14px;
+	color: #333;
+}
+
+.orders .action a:first-child {
+	margin: 10px 20px;
+	width: 100px;
+	height: 30px;
+	background-color: #5EB69C;
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+	color: #FFF;
+}
+
+/*收藏（等公共样式）*/
+.history ul,
+.collection ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.history li,
+.collection li {
+	flex: 1;
+	height: 250px;
+}
+
+.history li img,
+.collection li img {
+	margin-right: 12px;
+	width: 160px;
+}
+
+.history li h5,
+.collection li h5 {
+	width: 160px;
+	height: 75px;
+	font-size: 16px;
+	color: #333;
+}
+
+.history li p,
+.collection li p {
+	font-size: 22px;
+	color: #9A2E1F;
+}
+
+/*主体内容 end*/

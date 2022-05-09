@@ -1,0 +1,295 @@
+.wrapper {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+/*快捷导航 start*/
+.shortcut {
+	height: 52px;
+	background-color: #333;
+}
+
+.shortcut .wrapper {
+	height: 52px;
+}
+
+.shortcut ul {
+	float: right;
+}
+
+.shortcut ul li {
+	float: left;
+	line-height: 52px;
+}
+
+.shortcut ul li a {
+	padding: 0 16px;
+	border-right: 1px solid #666;
+	font-size: 14px;
+	color: #DCDCDC;
+}
+
+.shortcut li:last-child a {
+	border-right: 0;
+}
+
+.shortcut li i {
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	margin-right: 8px;
+	background-image: url(../images/sprites.png);
+	background-position: -160px -70px;
+	vertical-align: middle;
+}
+
+/*快捷导航 end*/
+/*头部 start*/
+.header {
+	margin: 30px auto;
+	height: 70px;
+}
+
+.logo {
+	float: left;
+	width: 207px;
+	height: 70px;
+}
+
+.logo h1 {
+	width: 207px;
+	height: 70px;
+}
+
+.logo h1 a {
+	display: block;
+	width: 207px;
+	height: 70px;
+	background-image: url(../images/logo.png);
+	background-size: contain;
+	/*隐藏文字*/
+	font-size: 0;
+}
+
+.nav {
+	float: left;
+	margin-left: 40px;
+	height: 70px;
+}
+
+.nav li {
+	float: left;
+	margin-right: 48px;
+	line-height: 70px;
+}
+
+.nav li a {
+	padding-bottom: 7px;
+}
+
+.nav li a:hover {
+	color: #27BA9B;
+	border-bottom: 1px solid #27BA9B;
+}
+
+.search {
+	position: relative;
+	float: left;
+	margin-left: 34px;
+	margin-top: 24px;
+	width: 172px;
+	height: 30px;
+	border-bottom: 2px solid #E7E7E7;
+}
+
+.search input {
+	padding-left: 30px;
+	width: 172px;
+	height: 28px;
+}
+
+.search input::placeholder {
+	font-size: 14px;
+	color: #CCC;
+}
+
+.search i {
+	position: absolute;
+	left: 2px;
+	top: 3px;
+	width: 18px;
+	height: 18px;
+	background-image: url(../images/sprites.png);
+	background-position: -79px -69px;
+}
+
+.shopping-cart {
+	position: relative;
+	float: left;
+	margin-left: 15px;
+	margin-top: 28px;
+	width: 23px;
+	height: 23px;
+	background-image: url(../images/sprites.png);
+	background-position: -119px -69px;
+}
+
+.shopping-cart i {
+	position: absolute;
+	right: -13px;
+	top: -6px;
+	width: 20px;
+	height: 15px;
+	background-color: #E26237;
+	border-radius: 8px;
+	line-height: 15px;
+	text-align: center;
+	color: #FFF;
+	font-size: 13px;
+}
+
+/*头部 end*/
+/*版权 start*/
+.footer {
+	height: 342px;
+	background-color: #333;
+}
+
+.footer .wrapper {
+	width: 1393px;
+}
+
+.footer .top {
+	padding-top: 59px;
+	padding-left: 135px;
+	height: 175px;
+	border-bottom: 3px solid #434343;
+}
+
+.footer .top li {
+	float: left;
+	margin-right: 300px;
+	width: 195px;
+	height: 58px;
+	font-size: 28px;
+	color: #FFF;
+}
+
+.footer .top li:last-child {
+	margin-right: 0;
+}
+
+.footer .top li i {
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	background-image: url(../images/sprites.png);
+	vertical-align: middle;
+}
+
+.footer .top li:nth-child(2) i {
+	background-position: -130px 0;
+}
+
+.footer .top li:nth-child(3) i {
+	background-position: -64px 0;
+}
+
+.footer .bottom {
+	padding-top: 40px;
+	font-size: 14px;
+	text-align: center;
+	color: #999;
+}
+
+.footer .bottom p {
+	margin-bottom: 20px;
+}
+
+.footer .bottom a {
+	color: #999;
+}
+
+/*版权 end*/
+
+/*联系 start*/
+.link {
+	height: 300px;
+}
+
+.link dl {
+	float: left;
+	margin-top: 80px;
+	margin-right: 110px;
+	text-align: center;
+}
+
+.link dd {
+	float: left;
+	margin-top: 20px;
+	margin-right: 6px;
+	width: 92px;
+	height: 92px;
+	border: 1px solid #EEE;
+	font-size: 14px;
+	color: #999;
+}
+
+.link dd i {
+	display: block;
+	margin: 5px auto;
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/sprites.png);
+}
+
+.link .one {
+	background-position: -249px -69px;
+}
+
+.link .two {
+	background-position: -350px -69px;
+}
+.link .three{
+	width: 35px;
+	height: 35px;
+	background-position: -250px -14px;
+}
+.link .four{
+	width: 35px;
+	height: 35px;
+	background-position: -350px -14px;
+}
+.link .download{
+	border-right: 1px solid #eee;
+}
+.link .download dd{
+	border: 0;
+}
+.link .download img{
+	width: 100%;
+}
+.link .download a{
+	display: block;
+	margin-top: 10px;
+	width: 88px;
+	height: 32px;
+	line-height: 32px;
+	background-color: #27BA9B;
+	font-size: 14px;
+	color: #fff;
+}
+.link .tel dd{
+	width:160px;
+	border: 0;
+}
+.link .tel p:first-child{
+	font-size: 22px;
+	color: #666;
+}
+.link .tel p:last-child{
+	font-size: 15px;
+	color: #999;
+}
+
+/*联系 end*/
