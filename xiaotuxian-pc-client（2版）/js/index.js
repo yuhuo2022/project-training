@@ -5,13 +5,14 @@
 	const entry = document.querySelector('.xtx_entry');
 	
 	window.addEventListener('scroll', function () {
-		const ddes = document.documentElement.scrollTop;
-		// if (ddes >= 300) {
+		// 页面滚动距离
+		const roleDistance = document.documentElement.scrollTop;
+		// if (roleDistance >= 300) {
 		//   elevator.style.opacity = 1;
 		// } else {
 		//   elevator.style.opacity = 0;
 		// }
-		elevator.style.opacity = ddes >= entry.offsetTop ? 1 : 0;
+		elevator.style.opacity = roleDistance >= entry.offsetTop ? '1' : '0';
 	});
 // 点击返回顶部
 	backTop.addEventListener('click', function () {
@@ -20,6 +21,7 @@
 	});
 })();
 
+// 通过电梯导航，页面滚动到指定位置
 (function () {
 	const list = document.querySelector('.xtx-elevator-list');
 	// 点击电梯导航，滑动到对应位置
@@ -33,10 +35,8 @@
 			}
 			// 当前元素添加active
 			e.target.classList.add('active');
-			// 获取对应模块的offsetTop
-			const top = document.querySelector(`.xtx_goods_${e.target.dataset.name}`).offsetTop;
-			// 页面滚动到对应位置
-			document.documentElement.scrollTop = top;
+			// 获取对应模块的offsetTop，并让页面滚动到对应位置
+			document.documentElement.scrollTop = document.querySelector(`.xtx_goods_${e.target.dataset.name}`).offsetTop;
 		}
 	});
 	
@@ -63,3 +63,31 @@
 		}
 	});
 })();
+
+// 渲染用户或退出登录
+(function () {
+	const li1 = document.querySelector('.xtx_navs li:first-child');
+	const li2 = document.querySelector('.xtx_navs li:nth-child(2)');
+	render();
+	
+	// 渲染用户数据
+	function render() {
+		const uname = localStorage.getItem('xtx-uname');
+		if (uname) {
+			li1.innerHTML = `<a href="javascript:"><i class="iconfont icon-user"> ${uname}</i></a>`;
+			li2.innerHTML = `<a href="javascript:">退出登录</a>`;
+		} else {
+			li1.innerHTML = `<a href="./login.html">请先登录</a>`;
+			li2.innerHTML = `<a href="./register.html">免费注册</a>`;
+		}
+	}
+	
+	// 退出登录
+	li2.addEventListener('click',function () {
+		// 删除本地数据
+		localStorage.removeItem('xtx-uname');
+		render();
+	});
+})();
+
+
