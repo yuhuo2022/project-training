@@ -122,11 +122,11 @@
   color: #0673B1;
 }
 
-.xtx-login-main .wrapper .box .tab-pane .agree > label input {
+.xtx-login-main .wrapper .box .tab-pane .agree>label input {
   /* display: none; */
 }
 
-.xtx-login-main .wrapper .box .tab-pane .agree > label input:checked + span {
+.xtx-login-main .wrapper .box .tab-pane .agree>label input:checked+span {
   color: #17bb9b;
 }
 

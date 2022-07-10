@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Document
    ========================================================================== */
 /**
@@ -494,15 +495,15 @@ ul {
   display: none;
 }
 
-.xtx-check input:checked ~ span {
+.xtx-check input:checked~span {
   color: #27BA9B;
 }
 
-.xtx-check input:checked ~ i.icon-yixuanze {
+.xtx-check input:checked~i.icon-yixuanze {
   display: inline-block;
 }
 
-.xtx-check input:checked ~ i.icon-weixuanze {
+.xtx-check input:checked~i.icon-weixuanze {
   display: none;
 }
 
